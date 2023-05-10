@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(38, 38, 38);
+}
+
+nav .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 1.3em;
+  padding: 0 30px;
+  color: white;
+}
+
+nav .tickets {
+  background-color: rgb(235, 161, 25);
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+.home-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+}
+
+.whychooseus {
+  height: 100vh;
+}

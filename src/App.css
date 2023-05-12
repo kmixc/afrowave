@@ -15,9 +15,14 @@ nav .link {
   justify-content: center;
   align-items: center;
   height: 60px;
-  font-size: 1.3em;
-  padding: 0 30px;
+  font-size: 1.2em;
+  padding: 0 35px;
   color: white;
+  transition: 0.2s;
+}
+
+nav .link:hover {
+  background-color: rgb(141, 174, 203); 
 }
 
 nav .tickets {
@@ -36,6 +41,7 @@ nav .tickets {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .logo {
@@ -44,4 +50,5 @@ nav .tickets {
 
 .whychooseus {
   height: 100vh;
+  background-color: red;
 }

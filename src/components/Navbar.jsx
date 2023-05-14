@@ -19,7 +19,7 @@ export default function Navbar() {
         <Link onClick={showNavbar} to='/lineup' className='link'>LINEUP</Link>
         <Link onClick={showNavbar} to='/info' className='link'>INFO</Link>
         <Link onClick={showNavbar} to='/contact' className='link'>CONTACT</Link>
-        <Link onClick={showNavbar} to='https://www.google.com/' className='link tickets'>TICKETS</Link>
+        <Link onClick={showNavbar} to='#' className='link tickets'>TICKETS</Link>
         <button className='nav-btn' onClick={showNavbar}>
           <FontAwesomeIcon className='Xmark' icon={faXmark} size='2x' color='#fff' />
         </button>

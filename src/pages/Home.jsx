@@ -23,7 +23,7 @@ export default function Home() {
                                 <p className='home-info'>HISTORY - TORONTO, ON</p>
                                 <div className="mt-8 flex gap-x-4 justify-center">
                                     <a
-                                        href="/contact"
+                                        href="#"
                                         className="ticket-button inline-block rounded-none transition"
                                     >
                                         TICKETS 2023
@@ -42,7 +42,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div class="mx-auto bg-zinc-100 video-section">
+            <div class="mx-auto video-section">
                 <p>RELIVE <span className='afrowave-color'>2022</span></p>
                 <div className='video'>
                     <video loop="loop" controls id='Video2022'>

@@ -1,17 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #0c0c0c;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(29, 29, 29, 0.5);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-size: 50%;
+  z-index: 2;
 }
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: rgb(38, 38, 38);
+}
+
+header .nav-btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+header .nav-btn {
+  visibility: hidden;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  opacity: 0;
+}
+
+.open {
+  z-index: 0;
+}
+
+.Xmark {
+  transition: 1s;
 }
 
 nav .link {
@@ -21,8 +64,9 @@ nav .link {
   height: 60px;
   font-size: 1.2em;
   padding: 0 35px;
-  color: white;
+  color: #fff;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 nav .link:hover {
@@ -33,25 +77,6 @@ nav .tickets {
   background-color: rgb(235, 161, 25);
 }
 
-.home {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.home-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.logo {
-  width: 75%;
-}
-
 #myVideo {
   margin-left: auto;
   margin-right: auto;
@@ -60,18 +85,310 @@ nav .tickets {
   transform: translate(-50%)
 }
 
+@media only screen and (max-width: 1024px) {
+  header {
+    background-size: 100%;
+  }
+
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 1s;
+    transform: translateY(-100vh);
+    background: rgba(29, 29, 29, 0.97);
+    z-index: 2;
+    background-size: 150%;
+    font-size: 2em;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center p {
+  font-size: 2em;
+  color: #fff;
+}
+
+.afrowave-color {
+  color: #32B24B;
+}
+
+.ticket-button {
+  background-color: #32B24B;
+  color: #fff;
+  transition: 0.5s;
+  padding: 10px 20px;
+}
+
+.ticket-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.logo {
+  width: 60%;
+}
+
+.flyers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 20px;
+  background-color: #0c0c0c;
+}
+
+.event-flyer {
+  position: absolute;
+  transform: translateY(-50px);
+  height: 80%;
+}
+
+.event-flyer-2 {
+  display: none;
+}
+
+.video-section {
+  padding: 20px;
+  background-color: #0c0c0c;
+}
+
+.video-section p {
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  padding-bottom: 15px;
+}
+
 .video {
-  height: 60vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #Video2022 {
-  width: 50%;
+  width: 75%;
 }
 
-.whychooseus {
-  height: 100vh;
-  background-color: red;
+.sponsors {
+  height: 30vh;
+  background-color: #0c0c0c;
+}
+
+.sponsors .title {
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 824px) {
+  .flyers {
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .event-flyer {
+    display: none;
+  }
+
+  .event-flyer-2 {
+    display: inherit;
+    height: 100%;
+    width: 100%;
+  }
+
+  #Video2022 {
+    width: 100%;
+  }
+}
+
+.spacer {
+  height: 10vh;
+}
+
+.artists {
+  padding-top: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.artists .title {
+  font-size: 3em;
+  color: #fff;
+}
+
+.artists .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.artists .images-ios {
+  display: none;
+}
+
+.artists img {
+  padding: 10px;
+  width: 25%;
+}
+
+.djs {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.djs .title {
+  font-size: 3em;
+  color: #fff;
+}
+
+.djs .images {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.djs .images-ios {
+  display: none;
+}
+
+.djs img {
+  padding: 10px;
+  width: 25%;
+}
+
+.hosts {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hosts .title {
+  font-size: 3em;
+  color: #fff;
+}
+
+.hosts .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hosts .images-ios {
+  display: none;
+}
+
+.hosts img {
+  padding: 10px;
+  width: 25%;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  .artists .images-ios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .artists .images {
+    display: none;
+  }
+
+  .artists img {
+    width: 80%;
+  }
+
+  .djs .images-ios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .djs .images {
+    display: none;
+  }
+
+  .djs img {
+    width: 80%;
+  }
+
+  .hosts .images-ios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hosts .images {
+    display: none;
+  }
+
+  .hosts img {
+    width: 80%;
+  }
+}
+
+.footer .socials {
+  background-color: #2b2b2b;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer .socials a {
+  font-size: 1.5em;
+  padding: 0px 15px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.footer .socials a:hover {
+  color: #32B24B;
 }

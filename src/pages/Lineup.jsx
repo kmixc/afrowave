@@ -33,7 +33,7 @@ export default function Lineup() {
             <div className='spacer'></div>
             <div className='artists'>
                 <p className='title'>ARTIST LINEUP</p>
-                <div className='images'>
+                <div className='images-ios'>
                     <img src={Artist_1} alt="Blessd" />
                     <img src={Artist_2} alt="Fito_blanko" />
                     <img src={Artist_3} alt="Alx_veliz" />
@@ -41,7 +41,7 @@ export default function Lineup() {
                     <img src={Artist_5} alt="Aiona_santana" />
                     <img src={Artist_6} alt="Bebeboy" />
                 </div>
-                <div className="images-ios">
+                <div className="images">
                     <img src={Artist_1_SQUARE} alt="Blessd" />
                     <img src={Artist_2_SQUARE} alt="Fito_blanko" />
                     <img src={Artist_3_SQUARE} alt="Alx_veliz" />
@@ -52,22 +52,22 @@ export default function Lineup() {
             </div>
             <div className="djs">
                 <p className='title'>DJS</p>
-                <div className="images">
+                <div className="images-ios">
                     <img src={DJ_1} alt="Ep_the_latino" />
                     <img src={DJ_2} alt="Danny_Castro" />
                 </div>
-                <div className="images-ios">
+                <div className="images">
                     <img src={DJ_1_SQUARE} alt="Ep_the_latino" />
                     <img src={DJ_2_SQUARE} alt="Danny_Castro" />
                 </div>
             </div>
             <div className='hosts'>
                 <p className='title'>HOSTS</p>
-                <div className="images">
+                <div className="images-ios">
                     <img src={HOST_1} alt="Lexxicon" />
                     <img src={HOST_2} alt="Dolothegifted" />
                 </div>
-                <div className="images-ios">
+                <div className="images">
                     <img src={HOST_1_SQUARE} alt="Lexxicon" />
                     <img src={HOST_2_SQUARE} alt="Dolothegifted" />
                 </div>

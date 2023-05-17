@@ -70,11 +70,11 @@ nav .link {
 }
 
 nav .link:hover {
-  background-color: rgb(141, 174, 203);
+  background-color: #238334;
 }
 
 nav .tickets {
-  background-color: rgb(235, 161, 25);
+  background-color: #32B24B;
 }
 
 #myVideo {
@@ -207,14 +207,34 @@ nav .tickets {
 }
 
 .sponsors {
-  height: 30vh;
+  height: 100%;
   background-color: #0c0c0c;
+  padding: 50px;
 }
 
 .sponsors .title {
   font-size: 3em;
   color: #fff;
   text-align: center;
+}
+
+.sponsors-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sponsors-images img {
+  width: 20%;
+  height: 20%;
+  padding: 10px;
+}
+
+.sponsors-images .FRAN {
+  width: 7%;
+  height: 7%;
 }
 
 @media only screen and (max-width: 824px) {
@@ -235,6 +255,22 @@ nav .tickets {
 
   #Video2022 {
     width: 100%;
+  }
+
+  .sponsors-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sponsors-images img {
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+  }
+
+  .sponsors-images .FRAN {
+    width: 25%;
+    height: 25%;
   }
 }
 
@@ -381,8 +417,12 @@ nav .tickets {
   }
 }
 
-.footer .socials {
+.footer {
+
   background-color: #2b2b2b;
+}
+
+.footer .socials {
   height: 100px;
   display: flex;
   justify-content: center;
@@ -415,4 +455,29 @@ nav .tickets {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.fundedby {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.fundedby .title {
+  color: #fff;
+  font-size: 2em;
+}
+
+.fundedby-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+  margin-bottom: 40px;
+}
+
+.fundedby-image img {
+  width: 50%;
 }

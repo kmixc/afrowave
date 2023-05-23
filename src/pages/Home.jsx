@@ -4,6 +4,7 @@ import Video from '../img/AFROWAVE_PROMO_VIDEO.mp4'
 import EventFlyer from '../img/afrowave_2023/EVENT_1920_1080.jpg'
 import EventFlyer2 from '../img/afrowave_2023/EVENT_VERT.jpg'
 
+//Logos
 import TAC from '../img/logo_assets/TAC.svg'
 import OTF from '../img/logo_assets/OTF.svg'
 import CANADA from '../img/logo_assets/wordmark_c.svg'
@@ -18,13 +19,8 @@ import JM2 from '../img/logo_assets/LOGO_JM2.png'
 export default function Home() {
     return (
         <div>
-            <main>
+            <main className='bg'>
                 <div className="relative h-screen">
-                    <div className='flex absolute z-[-60] overflow-hidden'>
-                        <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline style={{ maxWidth: "1000%" }} id='myVideo'>
-                            <source src={Video}></source>
-                        </video>
-                    </div>
                     <div className="mx-auto max-w-3xl pb-32 pt-36 sm:pb-40 drop">
                         <div>
                             <div className='center'>
@@ -65,16 +61,16 @@ export default function Home() {
             <div className='sponsors'>
                 <p className='title'>FUNDED BY</p>
                 <div className='sponsors-images'>
-                    <img src={OTF} alt="Canada" />
-                    <img src={TAC} alt="Canada" />
+                    <img src={OTF} alt="OFT" />
+                    <img src={TAC} alt="TAC" />
                     <img src={CANADA} alt="Canada" />
-                    <img src={CIGOL} alt="Canada" />
-                    <img src={FRANCHIZE} className='FRAN' alt="Canada" />
-                    <img src={HISTORY} alt="Canada" />
-                    <img src={LIVENATION} alt="Canada" />
-                    <img src={BLESSED} alt="Canada" />
-                    <img src={CLICK} alt="Canada" />
-                    <img src={JM2} alt="Canada" />
+                    <img src={CIGOL} alt="CIGOL" />
+                    <img src={FRANCHIZE} className='FRAN' alt="FRANCHIZE" />
+                    <img src={HISTORY} alt="HISTORY" />
+                    <img src={LIVENATION} alt="LIVENATION" />
+                    <img src={BLESSED} alt="BLESSD" />
+                    <img src={CLICK} alt="CLICK" />
+                    <img src={JM2} alt="JM2" />
                 </div>
             </div>
         </div>

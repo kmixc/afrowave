@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #0c0c0c;
+  background: linear-gradient(180deg, rgba(119, 50, 13, 1) 0%, rgba(252, 100, 19, 1) 35%, rgba(228, 129, 76, 1) 100%);
+
 }
 
 .bg {
@@ -24,7 +25,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(29, 29, 29, 0.5);
+  background: #FC6413;
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
@@ -67,25 +68,27 @@ nav .link {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  font-size: 1.2em;
+  height: 45px;
+  font-size: 1.1em;
   padding: 0 35px;
   color: #fff;
   transition: 0.2s;
   cursor: pointer;
+  border-left: #85350b 2px solid;
 }
 
 nav .link:hover {
-  background-color: #c04d10;
+  background-color: #85350b;
 }
 
 nav .tickets {
-  background-color: #FC6413;
+  border-right: #85350b 2px solid;
 }
 
 @media only screen and (max-width: 1024px) {
   header {
     background-size: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
   }
 
   header .nav-btn {
@@ -111,11 +114,19 @@ nav .tickets {
     justify-content: center;
     gap: 1.5rem;
     transition: 1s;
+    background-color: #000;
     transform: translateY(-100vh);
-    background: rgba(29, 29, 29, 0.97);
     z-index: 2;
     background-size: 150%;
     font-size: 2em;
+  }
+
+  nav .link {
+    border-right: #FC6413 2px solid;
+  }
+
+  nav .tickets {
+    border-right: #FC6413 2px solid;
   }
 
   header .responsive_nav {
@@ -137,6 +148,10 @@ nav .tickets {
 
 .afrowave-color {
   color: #FC6413;
+}
+
+.green-color {
+  color: #32B24B;
 }
 
 .afrowave-color-bg {
@@ -164,13 +179,22 @@ nav .tickets {
   width: 60%;
 }
 
-.floral_1 {
-  position: absolute;
-  z-index: 0;
-  top: 0%;
-  right: 0;
-  clip-path: fill-box;
+.artist-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.artist-card {
+  margin: 10px;
+  height: 350px;
+  width: 275px;
+  background-color: #fff;
+}
+
+.artist-card-1 {}
+
+.artist-card-3 {}
 
 .flyers {
   display: flex;
@@ -178,7 +202,6 @@ nav .tickets {
   align-items: center;
   height: 80vh;
   padding: 20px;
-  background-color: #0c0c0c;
 }
 
 .event-flyer {
@@ -192,7 +215,6 @@ nav .tickets {
 
 .video-section {
   padding: 20px;
-  background-color: #0c0c0c;
 }
 
 .video-section p {
@@ -216,7 +238,6 @@ nav .tickets {
 
 .sponsors {
   height: 100%;
-  background-color: #0c0c0c;
   padding: 50px;
 }
 
@@ -283,7 +304,7 @@ nav .tickets {
 }
 
 .spacer {
-  height: 10vh;
+  height: 5vh;
 }
 
 .artists {

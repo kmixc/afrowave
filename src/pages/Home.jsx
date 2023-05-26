@@ -4,17 +4,6 @@ import Video from '../img/AFROWAVE_PROMO_VIDEO.mp4'
 import EventFlyer from '../img/afrowave_2023/EVENT_1920_1080.jpg'
 import EventFlyer2 from '../img/afrowave_2023/EVENT_VERT.jpg'
 
-//Logos
-import TAC from '../img/logo_assets/TAC.svg'
-import OTF from '../img/logo_assets/OTF.svg'
-import CANADA from '../img/logo_assets/wordmark_c.svg'
-import CIGOL from '../img/logo_assets/cigol.png'
-import FRANCHIZE from '../img/logo_assets/Franchize.png'
-import HISTORY from '../img/logo_assets/HISTORY_LOGO.svg'
-import LIVENATION from '../img/logo_assets/LiveNation_Logo.png'
-import BLESSED from '../img/logo_assets/LOGO_BLESSD.png'
-import CLICK from '../img/logo_assets/LOGO_CLIICK_WHITE.png'
-import JM2 from '../img/logo_assets/LOGO_JM2.png'
 
 export default function Home() {
     return (
@@ -49,8 +38,34 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className='artist-cards'>
+                <div className='artist-card artist-card-1'>
+                    <div>
+                        <div className='artist-image'></div>
+                        <div className='artist-desc'>
+                            <p>Blessd</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='artist-card artist-card-2'>
+                    <p>Fito Blanko</p>
+                </div>
+                <div className='artist-card artist-card-3'>
+                    <p>Alx Veliz</p>
+                </div>
+                <div className='artist-card artist-card-4'>
+                    <p>Looch Bodega</p>
+                </div>
+                <div className='artist-card artist-card-5'>
+                    <p>Aiona Santana</p>
+                </div>
+                <div className='artist-card artist-card-6'>
+                    <p>Bebeboy</p>
+                </div>
+            </div>
+
             <div class="mx-auto video-section">
-                <p>RELIVE <span className='afrowave-color'>2022</span></p>
+                <p>RELIVE <span className='green-color'>2022</span></p>
                 <div className='video'>
                     <video loop="loop" controls id='Video2022'>
                         <source src={Video}></source>
@@ -58,21 +73,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='sponsors'>
-                <p className='title'>FUNDED BY</p>
-                <div className='sponsors-images'>
-                    <img src={OTF} alt="OFT" />
-                    <img src={TAC} alt="TAC" />
-                    <img src={CANADA} alt="Canada" />
-                    <img src={CIGOL} alt="CIGOL" />
-                    <img src={FRANCHIZE} className='FRAN' alt="FRANCHIZE" />
-                    <img src={HISTORY} alt="HISTORY" />
-                    <img src={LIVENATION} alt="LIVENATION" />
-                    <img src={BLESSED} alt="BLESSD" />
-                    <img src={CLICK} alt="CLICK" />
-                    <img src={JM2} alt="JM2" />
-                </div>
-            </div>
+
         </div>
     )
 }

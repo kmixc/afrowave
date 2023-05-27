@@ -179,22 +179,88 @@ nav .tickets {
   width: 60%;
 }
 
-.artist-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.artist-card {
+  height: 450px;
+  width: 350px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5%;
+  transition: 0.5s;
 }
 
-.artist-card {
-  margin: 10px;
-  height: 350px;
-  width: 275px;
-  background-color: #fff;
+.artist-card:hover {
+  transform: scale(1.03);
+}
+
+.artist-card>.artist-image {
+  border-radius: 5% 5% 0 0;
+  opacity: 1;
+}
+
+.artist-card:hover>.artist-image {
+  opacity: 0.5;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.artist-desc p {
+  padding: 15px;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .artist-card-1 {}
 
 .artist-card-3 {}
+
+@media screen and (min-width: 380px) {
+  .swiper-container {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .swiper-container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 824px) {
+  .artist-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .artist-card {
+    margin: 10px;
+    height: 25%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10% 10% 0 0;
+  }
+}
 
 .flyers {
   display: flex;

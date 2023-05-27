@@ -4,6 +4,7 @@ import Video from '../img/AFROWAVE_PROMO_VIDEO.mp4'
 import EventFlyer from '../img/afrowave_2023/EVENT_1920_1080.jpg'
 import EventFlyer2 from '../img/afrowave_2023/EVENT_VERT.jpg'
 
+import Cards from '../components/Cards'
 
 export default function Home() {
     return (
@@ -38,31 +39,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='artist-cards'>
-                <div className='artist-card artist-card-1'>
-                    <div>
-                        <div className='artist-image'></div>
-                        <div className='artist-desc'>
-                            <p>Blessd</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='artist-card artist-card-2'>
-                    <p>Fito Blanko</p>
-                </div>
-                <div className='artist-card artist-card-3'>
-                    <p>Alx Veliz</p>
-                </div>
-                <div className='artist-card artist-card-4'>
-                    <p>Looch Bodega</p>
-                </div>
-                <div className='artist-card artist-card-5'>
-                    <p>Aiona Santana</p>
-                </div>
-                <div className='artist-card artist-card-6'>
-                    <p>Bebeboy</p>
-                </div>
-            </div>
+            <Cards />
 
             <div class="mx-auto video-section">
                 <p>RELIVE <span className='green-color'>2022</span></p>

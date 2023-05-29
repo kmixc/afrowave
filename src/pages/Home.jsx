@@ -32,15 +32,6 @@ export default function Home() {
                 </div>
             </main>
 
-            <div className='mx-auto'>
-                <div className='flyers p-6 px-2'>
-                    <img className='event-flyer' alt='eventflyer1' src={EventFlyer} />
-                    <img className='event-flyer-2' alt='eventflyer2' src={EventFlyer2} />
-                </div>
-            </div>
-
-            <Cards />
-
             <div class="mx-auto video-section">
                 <p>RELIVE <span className='green-color'>2022</span></p>
                 <div className='video'>
@@ -50,6 +41,14 @@ export default function Home() {
                 </div>
             </div>
 
+            <Cards />
+
+            <div className='mx-auto'>
+                <div className='flyers p-6 px-2'>
+                    <img className='event-flyer' alt='eventflyer1' src={EventFlyer} />
+                    <img className='event-flyer-2' alt='eventflyer2' src={EventFlyer2} />
+                </div>
+            </div>
 
         </div>
     )

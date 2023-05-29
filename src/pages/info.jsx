@@ -16,6 +16,32 @@ export default function info() {
     return (
         <div>
             <div className='spacer'></div>
+
+            <div className="info">
+                <div className="dates-info">
+                    <p className='title'>date</p>
+                    <p>JUNE 17TH, 2023</p>
+                </div>
+                <div className="location-info">
+                    <p className='title'>location</p>
+                    <p>HISTORY - TORONTO, ON</p>
+
+                    <p>HISTORY is conveniently located at 1663 Queen Street East (just east of Coxwell Avenue) in The Beaches neighbourhood.</p>
+                </div>
+                <div className="parking-info">
+                    <p className="title">parking</p>
+                    <p>Add parking to your ticket purchase for a guaranteed space in the parking lot nearest to the venue, conveniently located at 1167 Eastern Avenue (behind the venue, south of the Green P). If parking is still available when you complete your ticketing transaction, you will be prompted if you want to purchase a spot.</p>
+
+                    <p>If you have already purchased your show tickets and would like to add parking, select the show from this link, and follow the prompts to complete the transaction.</p>
+
+                    <p>Parking is also available for purchase from the lot on the night of the show, based on availability. To avoid disappointment, purchase your parking tickets in advance.</p>
+                </div>
+                <div className="ticket-info">
+                    <p className="title">tickets</p>
+
+                </div>
+            </div>
+
             <div className='sponsors'>
                 <p className='title'>FUNDED BY</p>
                 <div className='sponsors-images'>

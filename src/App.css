@@ -179,13 +179,15 @@ nav .tickets {
   width: 60%;
 }
 
+/*ALL CARDS*/
 .artist-card {
-  height: 450px;
+  height: 100%;
   width: 350px;
   margin: 20px;
   background-color: #fff;
   border-radius: 5%;
   transition: 0.5s;
+  color: #fff;
 }
 
 .artist-card:hover {
@@ -197,28 +199,170 @@ nav .tickets {
   opacity: 1;
 }
 
-.artist-card:hover>.artist-image {
-  opacity: 0.5;
+.artist-desc {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
+.artist-desc p {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.artist-desc .artist-socials a {
+  padding: 5px;
+}
+
+/*CARD ONE*/
+.artist-card-1 {
+  background-color: #5c88ff;
+}
+
+.artist-socials a {
+  padding: 5px;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.hide {
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 1.2em;
+}
+
+.hide a:hover {
+  color: #FC6413;
+}
+
+.artist-card:hover .hide {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.artist-image {
+  transition: 0.5s;
+}
+
+.artist-card:hover .artist-image {
+  filter: brightness(50%);
+}
+
+.artist-desc p {
+  transition: 0.5s ease;
+  transform: translateY(30px);
+}
+
+.artist-card:hover .artist-desc p {
+  transform: translateY(-2px) scale(1.1);
+}
+
+.circle {
+  border-radius: 4rem;
+  padding: 0 10px;
+  border: 1px solid #fff;
+}
+
+.artist-desc h6 {
+  opacity: 0;
+  font-size: 1em;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.artist-card:hover .artist-desc h6 {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+/*CARD 2*/
+.artist-card-2 {
+  background-color: #bd0016;
+}
+
+/*CARD 3*/
+.artist-card-3 {
+  background-color: #478d95;
+}
+
+/*CARD 4*/
+.artist-card-4 {
+  background-color: #f89b55;
+}
+
+/*CARD 5*/
+.artist-card-5 {
+  background-color: #ee7155;
+}
+
+/*CARD 6*/
+.artist-card-6 {
+  background-color: #87888d;
+}
+
+/*CARD 7*/
+.artist-card-7 {
+  background-color: #004e57;
+}
+
+/*CARD 8*/
+.artist-card-8 {
+  background-color: #7e000f;
+}
+
+/*CARD 9*/
+.artist-card-9 {
+  background-color: #124522;
+}
+
+/*CARD 10*/
+.artist-card-10 {
+  background-color: #6c245c;
+}
+
+/*CARD RESPONSIVE*/
+@media only screen and (max-width: 824px) {
+  .artist-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .artist-desc p {
+    font-size: 1.5em;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .artist-card {
+    height: 25%;
+    width: 100%;
+  }
+}
+
+/*SWIPER*/
 .swiper-wrapper {
   display: flex;
   flex-direction: row;
 }
 
-.artist-desc p {
-  padding: 15px;
-  font-size: 1.5em;
-  text-align: center;
+.swiper-button-next::after {
+  color: #fff;
 }
 
-.artist-card-1 {}
+.swiper-button-prev::after {
+  color: #fff;
+}
 
-.artist-card-3 {}
-
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 375px) {
   .swiper-container {
-    width: 380px;
+    width: 375px;
   }
 }
 
@@ -240,27 +384,8 @@ nav .tickets {
   }
 }
 
-@media only screen and (max-width: 824px) {
-  .artist-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .swiper-wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .artist-card {
-    margin: 10px;
-    height: 25%;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10% 10% 0 0;
-  }
-}
+/*LINEUP*/
 
 .flyers {
   display: flex;
@@ -301,6 +426,16 @@ nav .tickets {
   z-index: 1;
   width: 75%;
 }
+
+/*INFO*/
+
+.dates-info {}
+
+.location-info {}
+
+.parking-info {}
+
+.ticket-info {}
 
 .sponsors {
   height: 100%;
@@ -368,6 +503,9 @@ nav .tickets {
     height: 25%;
   }
 }
+
+
+/*LINEUP*/
 
 .spacer {
   height: 5vh;
@@ -462,8 +600,6 @@ nav .tickets {
   width: 25%;
 }
 
-
-
 @media only screen and (max-width: 1024px) {
 
   .artists .images-ios {
@@ -512,6 +648,9 @@ nav .tickets {
   }
 }
 
+
+/*FOOTER*/
+
 .footer {
   background-color: #2b2b2b;
 }
@@ -534,6 +673,8 @@ nav .tickets {
 .footer .socials a:hover {
   color: #32B24B;
 }
+
+/*CONTACT*/
 
 .contact {
   padding-top: 50px;

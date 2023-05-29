@@ -4,15 +4,19 @@ export default function Contact() {
     return (
         <div className='contact'>
             <section className="contact-form text-gray-700 body-font relative">
-                <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-col text-center w-full mb-12">
-                        <h1 className="sm:text-6xl text-4xl font-medium title-font mb-4 text-white">
+                <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center align-center px-5 py-5 mx-auto">
+                    <div className="flex flex-col text-center justify-center align-center mb-12">
+                        <h1 className="sm:text-7xl text-6xl font-medium title-font mb-4 text-white">
                             Contact Us
                         </h1>
-                        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                        <a className="green-color text-2xl">info@afrowaveto.com</a>
+                        <p className="leading-normal text-xl text-black my-2">
+                            401 Richmond St W #230,
+                            <br />
+                            Toronto, ON M5V 3A8
                         </p>
                     </div>
-                    <div className="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div className="lg:w-1/2 md:w-2/3 md:px-20 sm:px-10">
                         <div className="flex flex-wrap -m-2">
                             <div className="p-2 w-1/2">
                                 <div className="relative">
@@ -63,18 +67,10 @@ export default function Contact() {
                                     Send
                                 </button>
                             </div>
-                            <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                                <a className="afrowave-color">info@afrowaveto.com</a>
-                                <p className="leading-normal my-5">
-                                    401 Richmond St W #230,
-                                    <br />
-                                    Toronto, ON M5V 3A8
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     )
 }

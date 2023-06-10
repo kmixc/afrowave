@@ -48,7 +48,6 @@ export default function Cards() {
                 navigation={true}
                 slidesPerView={4}
                 spaceBetween={20}
-                loop={true}
                 grabCursor={true}
                 modules={[Navigation, FreeMode]}
                 className="mySwiper"

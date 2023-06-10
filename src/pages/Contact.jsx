@@ -9,8 +9,8 @@ export default function Contact() {
                         <h1 className="sm:text-7xl text-6xl font-medium title-font mb-4 text-white">
                             Contact Us
                         </h1>
-                        <a className="green-color text-2xl">info@afrowaveto.com</a>
-                        <p className="leading-normal text-xl text-black my-2">
+                        <a href="mailto:info@afrowaveto.com" target='contact' className="text-white hover:text-orange-500 transition text-2xl">info@afrowaveto.com</a>
+                        <p className="leading-normal text-xl text-white my-2">
                             401 Richmond St W #230,
                             <br />
                             Toronto, ON M5V 3A8
@@ -27,7 +27,7 @@ export default function Contact() {
                                         type="text"
                                         id="name"
                                         name="name"
-                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                        className="w-full bg-gray-100 rounded border-2 border-gray-300 focus:border-orange-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ export default function Contact() {
                                         type="email"
                                         id="email"
                                         name="email"
-                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                        className="w-full bg-gray-100 rounded border-2 border-gray-300 focus:border-orange-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
                             </div>
@@ -58,12 +58,12 @@ export default function Contact() {
                                     <textarea
                                         id="message"
                                         name="message"
-                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                                        className="w-full bg-gray-100 rounded border-2 border-gray-300 focus:border-orange-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                                     ></textarea>
                                 </div>
                             </div>
                             <div className="p-2 w-full">
-                                <button className="flex mx-auto text-white afrowave-color-bg border-0 py-2 px-8 focus:outline-none rounded text-lg">
+                                <button className="flex mx-auto afrowave-color-bg border-0 py-2 px-8 focus:outline-none rounded text-lg">
                                     Send
                                 </button>
                             </div>

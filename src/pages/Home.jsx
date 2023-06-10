@@ -11,13 +11,13 @@ export default function Home() {
         <div>
             <main className='bg'>
                 <div className="relative h-screen">
-                    <div className="mx-auto max-w-3xl pb-32 pt-36 sm:pb-40 drop">
+                    <div className="mx-auto pb-32 pt-20 sm:pb-40 drop">
                         <div>
                             <div className='center'>
                                 <img className='logo' src={Logo} alt="afrowave logo" />
-                                <p className='home-info'><span className='afrowave-color'>TICKETS ON SALE NOW</span></p>
-                                <p className='home-info'>JUNE 17TH, 2023</p>
-                                <p className='home-info'>HISTORY - TORONTO, ON</p>
+                                <p className='tickets-onsale-home'><span className='afrowave-color'>TICKETS ON SALE NOW</span></p>
+                                <p className='date-info-home'>JUNE 15TH, 16TH, 17TH, 2023</p>
+                                <p className='location-info-home'>Manifesto HQ & HISTORY - TORONTO, ON</p>
                                 <div className="mt-8 flex gap-x-4 justify-center">
                                     <a
                                         href="#"
@@ -33,11 +33,9 @@ export default function Home() {
             </main>
 
             <div class="mx-auto video-section">
-                <p>RELIVE <span className='green-color'>2022</span></p>
+                <p><span className='green-color'>2023</span> PROMO</p>
                 <div className='video'>
-                    <video loop="loop" controls id='Video2022'>
-                        <source src={Video}></source>
-                    </video>
+                    <iframe id='Video2022' src="https://www.youtube.com/embed/JAj0-zSluS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
 

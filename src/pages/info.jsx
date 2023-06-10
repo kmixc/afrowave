@@ -22,13 +22,15 @@ export default function info() {
                 <div className="dates-info">
                     <p className='title sm:text-5xl text-3xl'>date</p>
                     <hr />
-                    <p className='desc sm:text-xl text-md'>JUNE 17TH, 2023</p>
+                    <p className='desc sm:text-xl text-md'>JUNE 15TH, 16TH, 17TH, 2023</p>
                 </div>
 
                 <div className="location-info">
                     <p className='title sm:text-5xl text-3xl'>location</p>
                     <hr />
-                    <p className='desc sm:text-xl text-md'>HISTORY - TORONTO, ON is conveniently located at 1663 Queen Street East (just east of Coxwell Avenue) in The Beaches neighbourhood.</p>
+                    <p className='desc sm:text-xl text-md'>June 15TH & June 16TH: Manifesto HQ is located at Unit 501-130 Queens Quay E, Toronto, ON M5A 0P6, Canada. Doors Open at 7:00pm, show starts at 8:00pm.</p>
+                    <br />
+                    <p className='desc sm:text-xl text-md'>June 17TH: History - Toronto, Ontario is conveniently located at 1663 Queen Street East (just east of Coxwell Avenue) in The Beaches neighbourhood.</p>
                 </div>
 
                 <div className="parking-info">

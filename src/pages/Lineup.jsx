@@ -31,6 +31,11 @@ export default function Lineup() {
     return (
         <div>
             <div className='spacer'></div>
+            <div className='lineup-date-links'>
+                <a href="#">JUNE 15TH</a>
+                <a href="#">JUNE 16TH</a>
+                <a href="#">JUNE 17TH</a>
+            </div>
             <div className='artists'>
                 <p className='title'>ARTIST LINEUP</p>
                 <div className='images-ios'>

@@ -205,9 +205,9 @@ export default function Cards() {
                             <div className='artist-desc'>
                                 <p>Lexxicon</p>
                                 <div className='artist-socials artist-socials-9 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href='https://www.instagram.com/officialexxicon/' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/channel/UCHuCCySni7JSBKYTY0DAmVA' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/artist/2nMUTSpUyvbaC5XLPLEBiw?si=1K7pGZWkSM2KyOQZ1qBzbw&dl_branch=1&nd=1' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>host</h6>
                             </div>
@@ -223,9 +223,9 @@ export default function Cards() {
                             <div className='artist-desc'>
                                 <p>Dolothegifted</p>
                                 <div className='artist-socials artist-socials-10 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href='https://www.instagram.com/dolothegifted/?hl=en' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/channel/UCblndT1vrjeUfEXGC4GU_Cg' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/artist/4FtgNmGTOCl0zhshLbfX75' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>host</h6>
                             </div>

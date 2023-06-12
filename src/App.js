@@ -6,6 +6,7 @@ import Info from './pages/info';
 import Lineup from './pages/Lineup';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
+import Past_Festivals from './pages/Past Festivals';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/info" element={<Info />} />
         <Route path="/lineup" element={<Lineup />} />
+        <Route path="/pastfestivals" element={<Past_Festivals />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

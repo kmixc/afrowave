@@ -1,6 +1,5 @@
 import React from 'react'
 import Logo from '../img/Afrowave.svg'
-import Video from '../img/AFROWAVE_PROMO_VIDEO.mp4'
 import EventFlyer from '../img/afrowave_2023/EVENT_1920_1080.jpg'
 import EventFlyer2 from '../img/afrowave_2023/EVENT_VERT.jpg'
 
@@ -18,13 +17,15 @@ export default function Home() {
                                 <p className='tickets-onsale-home'><span className='afrowave-color'>TICKETS ON SALE NOW</span></p>
                                 <p className='date-info-home'>JUNE 15TH, 16TH, 17TH, 2023</p>
                                 <p className='location-info-home'>Manifesto HQ & HISTORY - TORONTO, ON</p>
-                                <div className="mt-8 flex gap-x-4 justify-center">
-                                    <a
-                                        href="#"
-                                        className="ticket-button inline-block rounded-none transition"
-                                    >
-                                        TICKETS 2023
-                                    </a>
+                                <div className='dropdown-ticket'>
+                                    <label for="touch"><span>TICKETS 2023</span></label>
+                                    <input type="checkbox" id="touch" />
+
+                                    <ul class="slide">
+                                        <li><a href="#">June 15th</a></li>
+                                        <li><a href="#">June 16th</a></li>
+                                        <li><a href="#">June 17th</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +36,7 @@ export default function Home() {
             <div class="mx-auto video-section">
                 <p><span className='green-color'>2023</span> PROMO</p>
                 <div className='video'>
-                    <iframe id='Video2022' src="https://www.youtube.com/embed/JAj0-zSluS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe id='Video2023' src="https://www.youtube.com/embed/JAj0-zSluS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
 

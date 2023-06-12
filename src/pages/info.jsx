@@ -42,13 +42,6 @@ export default function info() {
 
                     <p className='desc sm:text-xl text-md'>Parking is also available for purchase from the lot on the night of the show, based on availability. To avoid disappointment, purchase your parking tickets in advance.</p>
                 </div>
-
-                <div className="ticket-info">
-                    <p className="title sm:text-5xl text-3xl">tickets</p>
-                    <hr />
-                    <a className='ticket-btn' href="#">Purchase</a>
-                </div>
-
             </div>
 
             <div className='sponsors'>

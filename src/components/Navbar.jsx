@@ -18,8 +18,18 @@ export default function Navbar() {
         <Link onClick={showNavbar} to='/' className='link'>HOME</Link>
         <Link onClick={showNavbar} to='/lineup' className='link'>LINEUP</Link>
         <Link onClick={showNavbar} to='/info' className='link'>INFO</Link>
+        <Link onClick={showNavbar} to='/pastfestivals' className='link'>PAST FESTIVALS</Link>
         <Link onClick={showNavbar} to='/contact' className='link'>CONTACT</Link>
-        <Link onClick={showNavbar} to='#' className='link tickets'>TICKETS</Link>
+        <div class="dropdown tickets">
+          <button class="dropbtn">TICKETS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href='#'>June 15th</a>
+            <a href='#'>June 16th</a>
+            <a href='#'>June 17th</a>
+          </div>
+        </div>
         <button className='nav-btn' onClick={showNavbar}>
           <FontAwesomeIcon className='Xmark' icon={faXmark} size='2x' color='#fff' />
         </button>

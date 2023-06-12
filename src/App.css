@@ -4,11 +4,11 @@
   padding: 0;
   margin: 0;
   font-family: 'Monument Extended', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   background: linear-gradient(180deg, rgba(119, 50, 13, 1) 0%, rgba(252, 100, 19, 1) 35%, rgba(228, 129, 76, 1) 100%);
-
 }
 
 .bg {
@@ -16,6 +16,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/*NAVBAR*/
 
 header {
   position: absolute;
@@ -82,7 +84,59 @@ nav .link:hover {
 }
 
 nav .tickets {
+  border-left: #85350b 2px solid;
   border-right: #85350b 2px solid;
+}
+
+nav .tickets button {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  font-size: 1.1em;
+  padding: 0 35px;
+  color: #fff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+nav .dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 9.1%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -122,9 +176,9 @@ nav .tickets {
   }
 
   nav .link {
-    font-size: 1.7em;
+    font-size: 1em;
     padding: 5px;
-    height: 50px;
+    height: 40px;
     border: none;
   }
 
@@ -133,12 +187,79 @@ nav .tickets {
   }
 
   nav .tickets {
+    border: none;
+  }
+
+  nav .tickets .dropdown-content {
+    font-size: 1em;
+  }
+
+  nav .tickets {
     border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   header .responsive_nav {
     transform: none;
   }
+}
+
+/*HOME*/
+
+.dropdown-ticket {
+  width: 300px;
+  background: #fff;
+  margin: 40px auto;
+  z-index: 2;
+}
+
+.dropdown-ticket span {
+  padding: 30px;
+  background: #FC6413;
+  color: white;
+  font-size: 1.3em;
+  font-variant: small-caps;
+  cursor: pointer;
+  display: block;
+  box-shadow: #000 2px 2px 10px;
+}
+
+.dropdown-ticket span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+  color: #000;
+}
+
+.slide li {
+  padding: 20px;
+}
+
+.slide li:hover {}
+
+.slide li a {
+  font-size: 2em;
+}
+
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch:checked+.slide {
+  height: 260px;
 }
 
 .tickets-onsale-home {
@@ -222,7 +343,6 @@ nav .tickets {
     text-align: center;
     font-size: 1em;
   }
-
 
   .logo {
     width: 70%;
@@ -475,7 +595,33 @@ nav .tickets {
 #Video2022 {
   z-index: 1;
   width: 75%;
-  height: 700px;
+}
+
+#Video2023 {
+  z-index: 1;
+  width: 75%;
+  height: 750px;
+}
+
+.gallery p {
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #Video2023 {
+    width: 100%;
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 824px) {
+  #Video2023 {
+    width: 100%;
+    height: 500px;
+  }
 }
 
 /*INFO*/
@@ -538,33 +684,6 @@ nav .tickets {
   text-transform: uppercase;
 }
 
-.ticket-info {
-  width: 75%;
-  padding: 20px 0;
-  text-shadow: #000 2px 2px 5px;
-}
-
-.ticket-info .title {
-  text-transform: uppercase;
-}
-
-.ticket-info hr {
-  padding: 10px;
-}
-
-.ticket-btn {
-  background-color: #FC6413;
-  padding: 10px;
-  font-size: 1.5em;
-  transition: 0.3s;
-  text-shadow: none;
-}
-
-.ticket-btn:hover {
-  color: #000;
-  background-color: #fff;
-}
-
 .sponsors {
   height: 100%;
   padding: 50px;
@@ -616,10 +735,6 @@ nav .tickets {
     width: 100%;
   }
 
-  #Video2022 {
-    width: 100%;
-  }
-
   .sponsors-images {
     flex-direction: row;
     flex-wrap: wrap;
@@ -639,18 +754,21 @@ nav .tickets {
 
 
 /*LINEUP*/
-
 .spacer {
   height: 5vh;
 }
 
 .artists {
-  padding-top: 5%;
+  padding-top: 20px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.artists hr {
+  width: 80%;
 }
 
 .artists .title {
@@ -668,69 +786,68 @@ nav .tickets {
 
 .artists .images-ios {
   display: none;
+  padding: 25px;
 }
 
-.artists img {
-  padding: 10px;
-  width: 25%;
-}
-
-.djs {
-  height: 100%;
+.lineup-date-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #FC6413;
 }
 
-.djs .title {
-  font-size: 3em;
+.lineup-date-links a {
+  text-align: center;
+  width: 33.333333333333%;
+  padding: 10px;
+  font-size: 1.5em;
   color: #fff;
+  transition: 0.5s;
+  background-color: #FC6413;
 }
 
-.djs .images {
-  padding: 20px;
+
+.lineup-date-links a:hover {
+  background-color: #85350b;
+}
+
+.artist-lineup-card {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.djs .images-ios {
-  display: none;
-}
-
-.djs img {
-  padding: 10px;
   width: 25%;
+  flex-wrap: wrap;
 }
 
-.hosts {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.hosts .title {
-  font-size: 3em;
+.artist-lineup-name {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
   color: #fff;
+  transition: 0.5s;
+  font-size: 1.5em;
+  text-shadow: #000 2px 2px 7px;
 }
 
-.hosts .images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
+.artist-lineup-image {
+  transition: 0.5s;
 }
 
-.hosts .images-ios {
-  display: none;
+.artist-lineup-image:hover {
+  filter: brightness(40%);
 }
 
-.hosts img {
-  padding: 10px;
-  width: 25%;
+.artist-lineup-card:hover .artist-lineup-name {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 1424px) {
+  .artist-lineup-card {
+    width: 35%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -739,45 +856,40 @@ nav .tickets {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .artists .images {
     display: none;
   }
 
-  .artists img {
-    width: 80%;
+  .artists div img {
+    width: 70%;
   }
 
-  .djs .images-ios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .artist-lineup-card {
+    width: 100%;
+  }
+
+  .lineup-date-links {
+    font-size: 1.5em;
     flex-direction: column;
   }
 
-  .djs .images {
+  .lineup-date-links a {
+    width: 100%;
+  }
+
+  .spacer {
     display: none;
   }
+}
 
-  .djs img {
-    width: 80%;
-  }
-
-  .hosts .images-ios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .hosts .images {
-    display: none;
-  }
-
-  .hosts img {
-    width: 80%;
+@media only screen and (max-width: 624px) {
+  .artists div img {
+    width: 100%;
+    padding: 10px;
   }
 }
 

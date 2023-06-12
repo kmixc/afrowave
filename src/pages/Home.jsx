@@ -1,7 +1,5 @@
 import React from 'react'
 import Logo from '../img/Afrowave.svg'
-import EventFlyer from '../img/afrowave_2023/EVENT_1920_1080.jpg'
-import EventFlyer2 from '../img/afrowave_2023/EVENT_VERT.jpg'
 
 import Cards from '../components/Cards'
 
@@ -22,9 +20,9 @@ export default function Home() {
                                     <input type="checkbox" id="touch" />
 
                                     <ul class="slide">
-                                        <li><a href="#">June 15th</a></li>
-                                        <li><a href="#">June 16th</a></li>
-                                        <li><a href="#">June 17th</a></li>
+                                        <a href="https://www.eventbrite.com/e/afrowaveto-showcase-part-1-tickets-645943663887?aff=oddtdtcreator" target='tickets'><li>June 15th</li></a>
+                                        <a href="https://www.eventbrite.com/e/afrowaveto-showcase-part-2-tickets-645940063117?aff=oddtdtcreator" target='tickets'><li>June 16th</li></a>
+                                        <a href="https://www.ticketmaster.ca/afrowaveto-presents-blessd-toronto-ontario-06-17-2023/event/10005E7F0FC746BD" target='tickets'><li>June 17th</li></a>
                                     </ul>
                                 </div>
                             </div>
@@ -41,13 +39,6 @@ export default function Home() {
             </div>
 
             <Cards />
-
-            <div className='mx-auto'>
-                <div className='flyers p-6 px-2'>
-                    <img className='event-flyer' alt='eventflyer1' src={EventFlyer} />
-                    <img className='event-flyer-2' alt='eventflyer2' src={EventFlyer2} />
-                </div>
-            </div>
 
         </div>
     )

@@ -242,13 +242,17 @@ nav .dropdown:hover .dropdown-content {
   color: #000;
 }
 
-.slide li {
+.slide a li {
   padding: 20px;
+  transition: 0.3s;
 }
 
-.slide li:hover {}
+.slide a li:hover {
+  color: #fff;
+  background-color: #4d4d4d;
+}
 
-.slide li a {
+.slide a li {
   font-size: 2em;
 }
 
@@ -474,22 +478,22 @@ nav .dropdown:hover .dropdown-content {
 
 /*CARD 7*/
 .artist-card-7 {
-  background-color: #004e57;
+  background-color: #d83d1c;
 }
 
 /*CARD 8*/
 .artist-card-8 {
-  background-color: #7e000f;
+  background-color: #686868;
 }
 
 /*CARD 9*/
 .artist-card-9 {
-  background-color: #124522;
+  background-color: #015069;
 }
 
 /*CARD 10*/
 .artist-card-10 {
-  background-color: #6c245c;
+  background-color: #49251b;
 }
 
 /*CARD RESPONSIVE*/
@@ -516,6 +520,13 @@ nav .dropdown:hover .dropdown-content {
   }
 }
 
+@media only screen and (max-width: 524px) {
+  .artist-card {
+    height: 25%;
+    width: fit-content;
+  }
+}
+
 /*SWIPER*/
 .swiper-wrapper {
   display: flex;
@@ -530,9 +541,9 @@ nav .dropdown:hover .dropdown-content {
   color: #fff;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 390px) {
   .swiper-container {
-    width: 375px;
+    width: 390px;
   }
 }
 

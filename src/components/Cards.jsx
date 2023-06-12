@@ -15,10 +15,10 @@ import looch_bodega_card from '../img/card_assets/looch_bodega_card.jpg'
 import aiona_santana_card from '../img/card_assets/aiona_santana_card.jpg'
 import bebeboy_card from '../img/card_assets/bebeboy_card.jpg'
 
-import DJ_1_SQUARE from "../img/afrowave_2023/Ep_the_latino_SQUARE.png"
-import DJ_2_SQUARE from "../img/afrowave_2023/Danny_castro_SQUARE.png"
-import HOST_1_SQUARE from "../img/afrowave_2023/Lexxicon_SQUARE.png"
-import HOST_2_SQUARE from "../img/afrowave_2023/Dolothegifted_SQUARE.png"
+import DJ_1_SQUARE from "../img/card_assets/ep_the_latino_card.png"
+import DJ_2_SQUARE from "../img/card_assets/danny_castro_card.png"
+import HOST_1_SQUARE from "../img/card_assets/lexxicon_card.png"
+import HOST_2_SQUARE from "../img/card_assets/DOLOTHEGIFTED_card.png"
 
 
 export default function Cards() {
@@ -27,7 +27,7 @@ export default function Cards() {
             <Swiper
                 breakpoints={{
                     375: {
-                        width: 375,
+                        width: 390,
                         slidesPerView: 1,
                     },
                     480: {
@@ -61,9 +61,9 @@ export default function Cards() {
                             <div className='artist-desc artist-desc-1'>
                                 <p>Blessd</p>
                                 <div className='artist-socials artist-socials-1 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href='https://www.instagram.com/blessd/' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/channel/UCb164jMdHd94O34bASFbI3Q' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/artist/1TA5sGRlKUJXBN4ZyJuDIX' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>artist</h6>
                             </div>
@@ -79,9 +79,9 @@ export default function Cards() {
                             <div className='artist-desc artist-desc-2'>
                                 <p>Fito Blanko</p>
                                 <div className='artist-socials artist-socials-2 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href=' https://www.instagram.com/fitoblanko/' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/channel/UC_QEYtU1nHUuLIhXPhXgnhA' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/artist/5eYDJJfPXinVZq2mXleOSW' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>artist</h6>
                             </div>
@@ -97,9 +97,9 @@ export default function Cards() {
                             <div className='artist-desc'>
                                 <p>Alx Veliz</p>
                                 <div className='artist-socials artist-socials-3 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href='https://www.instagram.com/alxvelizmusic/' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/channel/UCWdGyXa3eo15Q6KvfLLzZSQ' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/artist/17rnpuu2LApoCL4x8fObZg' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>artist</h6>
                             </div>
@@ -115,9 +115,9 @@ export default function Cards() {
                             <div className='artist-desc'>
                                 <p>Looch Bodega</p>
                                 <div className='artist-socials artist-socials-4 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href='https://www.instagram.com/loochbodega/?hl=en' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/channel/UChVGL3ZNCSfjkoDP2iS4awA' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/artist/5TNT63dfbk6WMyYfJl7r82' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>artist</h6>
                             </div>
@@ -133,9 +133,9 @@ export default function Cards() {
                             <div className='artist-desc'>
                                 <p>Aiona Santana</p>
                                 <div className='artist-socials artist-socials-5 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href='https://www.instagram.com/aionasantana/?hl=en' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/channel/UCCK7GOMuqt6ErXrXzf-KtIw' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/artist/66GmDoscCxEGpqdJdgLUOD' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>artist</h6>
                             </div>
@@ -151,9 +151,9 @@ export default function Cards() {
                             <div className='artist-desc'>
                                 <p>Bebeboy</p>
                                 <div className='artist-socials artist-socials-6 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href='https://www.instagram.com/bebeboywurld/?hl=en' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/channel/UC2EjpTw8AvUJSejn8n48KPA' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/artist/3hBijYmf6uAE6PKfL9CNLk' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>artist</h6>
                             </div>
@@ -169,9 +169,9 @@ export default function Cards() {
                             <div className='artist-desc'>
                                 <p>Ep The Latino</p>
                                 <div className='artist-socials artist-socials-7 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href='https://www.instagram.com/epthelatino/' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/@epthelatino' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/user/platas07?si=wLD1pl0qS7mA3B8OSEejoA&nd=1' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>DJ</h6>
                             </div>
@@ -187,9 +187,9 @@ export default function Cards() {
                             <div className='artist-desc'>
                                 <p>Danny Castro</p>
                                 <div className='artist-socials artist-socials-8 hide'>
-                                    <a href='https://www.instagram.com/afrowaveto/' target='socials' class="fa-brands fa-instagram"> </a>
-                                    <a href='https://www.youtube.com/channel/UCR6RTGZE0XDulKVXSUqeAIQ' target='socials' class="fa-brands fa-youtube"> </a>
-                                    <a href='https://open.spotify.com/user/i9txq4ve9kf8knyakj28qp8ac' target='socials' class="fa-brands fa-spotify"> </a>
+                                    <a href='https://www.instagram.com/djdannycastro/?hl=en' target='socials' class="fa-brands fa-instagram"> </a>
+                                    <a href='https://www.youtube.com/channel/UCrgMf9DYcF8tVJIBxsHrkhw' target='socials' class="fa-brands fa-youtube"> </a>
+                                    <a href='https://open.spotify.com/artist/6RPBBklXU1zi4FPP7GnEe6' target='socials' class="fa-brands fa-spotify"> </a>
                                 </div>
                                 <h6 className='circle'>DJ</h6>
                             </div>

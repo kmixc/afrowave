@@ -25,9 +25,9 @@ export default function Navbar() {
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href='#'>June 15th</a>
-            <a href='#'>June 16th</a>
-            <a href='#'>June 17th</a>
+            <a href='https://www.eventbrite.com/e/afrowaveto-showcase-part-1-tickets-645943663887?aff=oddtdtcreator' target='tickets'>June 15th</a>
+            <a href='https://www.eventbrite.com/e/afrowaveto-showcase-part-2-tickets-645940063117?aff=oddtdtcreator' target='tickets'>June 16th</a>
+            <a href='https://www.ticketmaster.ca/afrowaveto-presents-blessd-toronto-ontario-06-17-2023/event/10005E7F0FC746BD' target='tickets'>June 17th</a>
           </div>
         </div>
         <button className='nav-btn' onClick={showNavbar}>

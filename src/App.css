@@ -77,6 +77,7 @@ nav .link {
   transition: 0.2s;
   cursor: pointer;
   border-left: #85350b 2px solid;
+  text-decoration: none;
 }
 
 nav .link:hover {
@@ -919,6 +920,18 @@ nav .dropdown:hover .dropdown-content {
   width: 50%;
 }
 
+.artists_2022 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.artists_2022 img {
+  width: 30%;
+  padding: 10px;
+}
 .lineup2021 {
   display: flex;
   justify-content: center;
@@ -941,6 +954,7 @@ nav .dropdown:hover .dropdown-content {
       width: 1000px;
       height: 650px;
     }
+    
   .lineup2022 img {
     padding: 10px;
     width: 70%;
@@ -954,6 +968,15 @@ nav .dropdown:hover .dropdown-content {
     width: 70%;
     padding: 10px;
   }
+.artists_2022 {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.artists_2022 img {
+  width: 30%;
+  padding: 5px;
+}
 }
 
 @media only screen and (max-width: 824px) {
@@ -975,6 +998,13 @@ nav .dropdown:hover .dropdown-content {
     width: 100%;
     padding: 10px;
   }
+.artists_2022 {
+  flex-direction: row;
+}
+
+.artists_2022 img {
+  width: 50%;
+}
 }
 
 

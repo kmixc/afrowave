@@ -100,6 +100,25 @@ nav .tickets button {
   cursor: pointer;
 }
 
+nav .past_festivals {
+  border-left: #85350b 2px solid;
+}
+
+nav .past_festivals button {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  font-size: 1.1em;
+  padding: 0 35px;
+  color: #fff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+nav .past_festivals .dropdown-content {
+  width: 13.9%;
+}
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -202,6 +221,22 @@ nav .dropdown:hover .dropdown-content {
     align-items: center;
   }
 
+  nav .past_festivals {
+    border: none;
+  }
+
+  nav .past_festivals .dropdown-content {
+    font-size: 1em;
+    width: 30%;
+  }
+
+  nav .past_festivals {
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   header .responsive_nav {
     transform: none;
   }
@@ -213,7 +248,7 @@ nav .dropdown:hover .dropdown-content {
   width: 300px;
   background: #fff;
   margin: 40px auto;
-  z-index: 2;
+  z-index: 0;
 }
 
 .dropdown-ticket span {
@@ -330,7 +365,7 @@ nav .dropdown:hover .dropdown-content {
 
 .logo {
   width: 22%;
-    padding: 20px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 824px) {
@@ -595,6 +630,12 @@ nav .dropdown:hover .dropdown-content {
   text-align: center;
   color: #fff;
   font-size: 3em;
+}
+
+.video-section h5 {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
   padding-bottom: 15px;
 }
 
@@ -932,6 +973,7 @@ nav .dropdown:hover .dropdown-content {
   width: 30%;
   padding: 10px;
 }
+
 .lineup2021 {
   display: flex;
   justify-content: center;
@@ -944,17 +986,88 @@ nav .dropdown:hover .dropdown-content {
   width: 50%;
 }
 
+.past-artists {
+  padding-top: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.past-artists .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.past-artist-lineup-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.past-artist-lineup-name {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 1.5em;
+  text-shadow: #000 2px 2px 7px;
+}
+
+.past-artist-lineup-image {
+  transition: 0.5s;
+}
+
+.past-artist-lineup-image:hover {
+  filter: brightness(40%);
+}
+
+.past-artist-lineup-card:hover .past-artist-lineup-name {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 1424px) {
+  .past-artist-lineup-card {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  .artists div img {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
+  .past-artists div img {
+    width: 90%;
+  }
+
+  .past-artist-lineup-card {
+    width: 100%;
+  }
+
   #Video2023 {
     width: 100%;
     height: 650px;
   }
-  
-    #Video2022 {
-      width: 1000px;
-      height: 650px;
-    }
-    
+
+  #Video2022 {
+    width: 1000px;
+    height: 650px;
+  }
+
   .lineup2022 img {
     padding: 10px;
     width: 70%;
@@ -968,15 +1081,16 @@ nav .dropdown:hover .dropdown-content {
     width: 70%;
     padding: 10px;
   }
-.artists_2022 {
-  flex-wrap: wrap;
-  flex-direction: row;
-}
 
-.artists_2022 img {
-  width: 30%;
-  padding: 5px;
-}
+  .artists_2022 {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .artists_2022 img {
+    width: 30%;
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 824px) {
@@ -998,13 +1112,14 @@ nav .dropdown:hover .dropdown-content {
     width: 100%;
     padding: 10px;
   }
-.artists_2022 {
-  flex-direction: row;
-}
 
-.artists_2022 img {
-  width: 50%;
-}
+  .artists_2022 {
+    flex-direction: row;
+  }
+
+  .artists_2022 img {
+    width: 50%;
+  }
 }
 
 
